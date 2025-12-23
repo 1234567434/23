@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chat</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h2>Simple Chat 💬</h2>
+            <small id="status">Запуск из папки...</small>
+        </header>
+
+        <div id="messages"></div>
+
+        <div class="controls">
+            <label class="btn-file">
+                📁 <input type="file" id="file-input" accept="image/*,video/*" hidden>
+            </label>
+            <input type="text" id="msg-input" placeholder="Сообщение...">
+            <button id="voice-btn">🎤</button>
+            <button id="send-btn">➤</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
